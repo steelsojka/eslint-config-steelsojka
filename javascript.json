@@ -1,0 +1,225 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "experimentalObjectRestSpread": true,
+      "experimentalDecorators": true,
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "import-alias",
+    "import-length"
+  ],
+  "rules": {
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "quote-props": [
+      "error",
+      "as-needed"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "dot-location": [
+      "error",
+      "property"
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "always"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "camelcase": "error",
+    "no-constant-condition": "error",
+    "no-duplicate-case": "error",
+    "no-duplicate-imports": "error",
+    "no-invalid-regexp": "error",
+    "no-sparse-arrays": "error",
+    "valid-typeof": "error",
+    "no-unexpected-multiline": "error",
+    "no-extra-semi": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 2,
+        "maxBOF": 0
+      }
+    ],
+    "no-with": "error",
+    "eol-last": "error",
+    "new-parens": "error",
+    "no-alert": "error",
+    "no-eval": "error",
+    "no-extend-native": "error",
+    "no-extra-label": "error",
+    "no-implicit-coercion": "error",
+    "no-case-declarations": "error",
+    "no-useless-escape": "error",
+    "require-yield": "error",
+    "no-cond-assign": "error",
+    "prefer-const": "error",
+    "comma-spacing": "error",
+    "arrow-spacing": "error",
+    "no-var": "error",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "semi-style": [
+      "error",
+      "last"
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": [
+          "return",
+          "multiline-block-like",
+          "class",
+          "export",
+          "function"
+        ]
+      },
+      {
+        "blankLine": "always",
+        "prev": [
+          "const",
+          "let",
+          "var",
+          "export",
+          "multiline-block-like"
+        ],
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": [
+          "const",
+          "let",
+          "var",
+          "export"
+        ]
+      },
+      {
+        "blankLine": "any",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": [
+          "const",
+          "let",
+          "var"
+        ]
+      },
+      {
+        "blankLine": "any",
+        "prev": "export",
+        "next": "export"
+      },
+      {
+        "blankLine": "any",
+        "prev": "multiline-block-like",
+        "next": [
+          "case",
+          "break",
+          "default"
+        ]
+      },
+      {
+        "blankLine": "any",
+        "prev": [
+          "case",
+          "break",
+          "default"
+        ],
+        "next": "*"
+      }
+    ],
+    "import-length/import-length": [
+      "error",
+      {
+        "indentChar": "  ",
+        "charLimit": 120,
+        "oneNamedImportPerLine": true
+      }
+    ],
+    "import-alias/import-alias": [
+      "error",
+      {
+        "aliases": [
+          {
+            "alias": "@src",
+            "matcher": "^src"
+          }
+        ]
+      }
+    ],
+    "operator-linebreak": [
+      "error",
+      "before",
+      {
+        "overrides": {
+          "=": "ignore",
+          "+=": "ignore",
+          "-=": "ignore",
+          "*=": "ignore",
+          "/=": "ignore",
+          "**=": "ignore",
+          "%=": "ignore",
+          "|=": "ignore",
+          "&=": "ignore",
+          "^=": "ignore",
+          "<<=": "ignore",
+          ">>=": "ignore",
+          ">>>=": "ignore"
+        }
+      }
+    ],
+    "no-undef": "off",
+    "no-unreachable": "off",
+    "no-empty-pattern": "off",
+    "no-fallthrough": "off",
+    "no-console": "off",
+    "no-extra-boolean-cast": "off",
+    "no-redeclare": "off",
+    "no-dupe-args": "off",
+    "no-dupe-class-members": "off",
+    "space-infix-ops": "off",
+    "no-unused-vars": "off",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "groups": [
+          [
+            "builtin",
+            "external"
+          ],
+          [
+            "internal",
+            "sibling",
+            "parent",
+            "index"
+          ]
+        ]
+      }
+    ]
+  }
+}
