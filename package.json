@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-import-alias": "^1.2.0",
     "eslint-plugin-import-length": "^1.0.3",
     "eslint-plugin-typescript": "^0.13.0",
